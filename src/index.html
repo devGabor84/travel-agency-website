@@ -10,11 +10,19 @@
     <title>Travel Agency</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
+
     <div class="container">
+
+      <!--HEADER: logo and navigation-->
+
       <div class="header">header</div>
+
+      <!--SHOWCASE: background img-->
+
       <section class="showcase">
-        <h1 class="heading-lg">Explore a World of Amazing Adventures</h1>
+        <h2 class="heading-lg">Explore a World of Amazing Adventures</h1>
         <p class="showcase__description text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
           vel magni optio harum accusamus incidunt, consequatur atque sapiente
@@ -25,7 +33,86 @@
         <button class="showcase__btn btn">Get A Qutoe</button>
         <button class="showcase__btn btn">Talk To Us</button>
       </section>
-      <section class="holidays">holidays</section>
+
+      <!--HOLIDAYS: contains filter and sort options showing the best holiday packgages-->
+
+      <section class="holidays">
+        <div class="sort-control">
+          <button class="sort-control__item btn" data-type = "name">        
+              <span>sort <span class="text-highlighted"><span>alphabetically</span> </span>       
+          </button>
+  
+          <button class="sort-control__item btn" data-type = "price" autofocus>
+            <span>sort by <span class="text-highlighted"> price</span></span> 
+          </button>
+  
+          <button class="sort-control__item btn" data-type =  "rating">
+            <span>sort by <span class="text-highlighted"> star rating</span> </span>   
+          </button>
+        </div>
+  
+        <div class="filter-controls">
+          <div class="filter-controls__container">
+            <input type="radio" name="filter" id="allAirports" value="all" checked > 
+            <label for="allAirports">Show all airports</label>
+    
+            <input type="radio" name="filter" id="manchester" value="manchester" >
+            <label for="manchester">Manchester</label> 
+    
+            <input type="radio" name="filter" id="liverpool" value="liverpool" > 
+            <label for="liverpool">Liverpool</label>
+    
+            <input type="radio" name="filter" id="midlands" value="midlands" >
+            <label for="midlands">East Midlands</label>
+          </div>
+    
+            <select>
+                <option value="all">Filter by date (show all)</option>
+                <option value="may">May 2018</option>
+                <option value="july">July 2018</option>
+            </select>
+  
+            <button type="button" class="btn">Filter</button>
+        </div>
+
+        <h2 class="lg-heading">Holidays</h2>
+        <h3 class="heading-md">Best Holiday Packages</h3>
+
+        <div class="holidays__hotel-list">
+
+          <div class="hotel-view">
+            <div class="hotel-view__info">
+              <h2 class="heading-lg">
+                Holiday name 
+              </h2>
+              <p class="text">Holiday location</p>
+            </div>
+        
+            <div class="hotel-view__price">
+              <h3 class="heading-md">Holiday price:</h3>
+              <h1 class="heading-xlg">Holiday price</h1>
+            </div>
+        
+            <div class="hotel-view__img"><img src="" alt=""  /></div>
+          <div class="hotel-view__description">
+            <svg class="hotel-view__description__arrow">
+              <use xLink:href=""></use>
+            </svg>
+            <p class="hotel-view__description__header text">
+              <span class="text-highlighted">holiday startDate</span> for
+              <span class="text-highlighted">holiday duration</span> from
+              <span class="text-highlighted">holiday airport</span>,
+              <span class="text-highlighted">holiday adults</span>, Adults,
+              <span class="text-highlighted">holiday children</span>, Children
+              <span class="text-highlighted">holiday infants</span> infant
+            </p>
+            <p class="text hotel-view__description__text">holiday.description
+              <button class="btn">book now</button></p>
+          </div>
+        </div>
+
+        </div>
+      </section>
       <section class="promotions">promotions</section>
       <section class="gallery">gallery</section>
       <footer>footer</footer>

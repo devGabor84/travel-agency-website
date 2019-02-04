@@ -1,3 +1,28 @@
 .showcase {
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient($overlay-light, $overlay-light),
+    url("../assets/showcase-bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 80rem);
+  grid-template-rows: repeat(min-content, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 2rem;
+  padding: 0 12rem;
+
+  &__description {
+    padding-right: 6rem;
   }
+
+  &__btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-items: start;
+    grid-gap: 1rem;
+  }
+}

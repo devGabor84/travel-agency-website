@@ -5,3 +5,84 @@ body {
   font-size: 1.2rem;
   color: $black;
 }
+
+%heading {
+  font-weight: 600;
+}
+
+.heading-sm {
+  @extend %heading;
+  font-size: 1.6rem;
+
+  &--light {
+    color: $white;
+  }
+  &--dark {
+    color: $black;
+  }
+  &--grey {
+    color: $light-grey;
+  }
+}
+
+.heading-md {
+  @extend %heading;
+  font-size: 2rem;
+
+  &--light {
+    color: $white;
+  }
+  &--dark {
+    color: $black;
+  }
+  &--grey {
+    color: $light-grey;
+  }
+}
+
+.heading-lg {
+  @extend %heading;
+  font-size: 2.4rem;
+
+  &--light {
+    color: $white;
+  }
+  &--dark {
+    color: $black;
+  }
+  &--grey {
+    color: $light-grey;
+  }
+}
+
+.heading-xlg {
+  @extend %heading;
+  font-size: 3rem;
+
+  &--light {
+    color: $white;
+  }
+  &--dark {
+    color: $black;
+  }
+  &--grey {
+    color: $light-grey;
+  }
+}
+
+.text {
+  line-height: 1.4;
+  font-size: 1.4rem;
+
+  &--light {
+    color: $white;
+  }
+
+  &--dark {
+    color: $black;
+  }
+
+  &-highlighted {
+    font-weight: 600;
+  }
+}

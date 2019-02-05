@@ -56,9 +56,9 @@
   }
 
   &__rating {
-    height: 1.5rem;
-    width: 1.5rem;
-    fill: yellow;
+    height: 1rem;
+    width: 1rem;
+    fill: rgb(255, 187, 0);
   }
 
   &__price {
@@ -91,7 +91,6 @@
     transform: scaleY(0);
     transform-origin: center;
     transition: 0.2s;
-    cursor: pointer;
 
     p {
       padding: 1rem;

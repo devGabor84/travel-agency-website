@@ -10,10 +10,7 @@ body {
   font-weight: 600;
 }
 
-.heading-sm {
-  @extend %heading;
-  font-size: 1.6rem;
-
+.heading {
   &--light {
     color: $white;
   }
@@ -23,51 +20,21 @@ body {
   &--grey {
     color: $light-grey;
   }
+}
+
+.heading-sm {
+  @extend %heading;
+  font-size: 1.6rem;
 }
 
 .heading-md {
   @extend %heading;
   font-size: 2rem;
-
-  &--light {
-    color: $white;
-  }
-  &--dark {
-    color: $black;
-  }
-  &--grey {
-    color: $light-grey;
-  }
-}
-
-.heading-lg {
-  @extend %heading;
-  font-size: 2.4rem;
-
-  &--light {
-    color: $white;
-  }
-  &--dark {
-    color: $black;
-  }
-  &--grey {
-    color: $light-grey;
-  }
 }
 
 .heading-xlg {
   @extend %heading;
   font-size: 3rem;
-
-  &--light {
-    color: $white;
-  }
-  &--dark {
-    color: $black;
-  }
-  &--grey {
-    color: $light-grey;
-  }
 }
 
 .text {
@@ -82,7 +49,16 @@ body {
     color: $black;
   }
 
+  &--grey {
+    color: $light-grey;
+  }
+
   &-highlighted {
     font-weight: 600;
+  }
+
+  &--small {
+    line-height: 1;
+    font-size: 1.2rem;
   }
 }

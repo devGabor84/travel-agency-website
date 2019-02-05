@@ -14,12 +14,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content 80vh repeat(4, min-content);
+  grid-template-rows: min-content 80vh min-content 50vh repeat(2, min-content);
   grid-template-columns:
     [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(
       2,
       minmax(0.5rem, 1fr)
-    ) repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr))
+    )
+    repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr))
     [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end];
 
   grid-row-gap: 3rem;

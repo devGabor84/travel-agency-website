@@ -23,7 +23,7 @@ body {
     repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr))
     [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end];
 
-  grid-row-gap: 3rem;
+  grid-row-gap: 5rem;
   padding: 2rem 0;
   min-height: 100vh;
 }

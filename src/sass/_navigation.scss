@@ -1,0 +1,56 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo {
+  align-self: start;
+}
+
+.menu {
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+  &__item {
+    padding: 1rem 1.5rem;
+    list-style: none;
+    position: relative;
+  }
+
+  &__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $green;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__item:hover:before {
+    transform: scale(1);
+    transform-origin: left;
+  }
+
+  &__item:hover .menu__link {
+    color: $white;
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor;
+  }
+}

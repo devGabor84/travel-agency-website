@@ -1,3 +1,24 @@
 footer {
   grid-column: full-start / full-end;
+  padding: 3rem;
+  background-color: $grey;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.footer__container {
+  padding: 1rem;
+}
+
+.footer__contacts {
+  padding-top: 1rem;
+
+  &__item {
+    margin-bottom: 1rem;
+    .icon {
+      margin-right: 0.75rem;
+    }
+  }
 }

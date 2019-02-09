@@ -25,7 +25,7 @@ a {
       2,
       minmax(0.5rem, 1fr)
     )
-    repeat(4, 18rem) repeat(2, minmax(0.5rem, 1fr))
+    repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr))
     [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end];
 
   grid-row-gap: 10rem;
@@ -55,14 +55,15 @@ a {
   &--center {
     text-align: center;
   }
-
-  &-md {
-    padding-bottom: 1rem;
-  }
 }
 
 .text {
   &--right {
     float: right;
   }
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
 }

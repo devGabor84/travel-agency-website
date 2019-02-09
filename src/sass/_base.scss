@@ -17,6 +17,10 @@ a {
   color: $black;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   display: grid;
   grid-template-rows: min-content 80vh min-content 50vh repeat(2, min-content);
@@ -66,4 +70,8 @@ a {
 .icon {
   width: 1.75rem;
   height: 1.75rem;
+
+  &--light {
+    fill: $white;
+  }
 }

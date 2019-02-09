@@ -20,11 +20,23 @@
       <div class="header">
        
         <nav class="navigation">
-          <div class="logo"></div>
+          <div class="menu__hamburger">
+              <svg class="icon">
+                  <use xlink:href="assets/sprite.svg#icon-menu"></use>
+              </svg>
+          </div>
+
+          <div class="logo">
+              <svg class="logo__icon">
+                  <use xlink:href="assets/sprite.svg#icon-earth"></use>
+              </svg>
+              <h3 class = "heading-md"><span class="text--green">Tra</span>veller</h3>
+          </div>
+
           <ul class="menu">
               <li class="menu__item">
                   <a href="#" class="menu__link">
-                      <svg class="menu__icon">
+                      <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-home"></use>
                       </svg>
                       <span>Home</span>
@@ -32,7 +44,7 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-aircraft-take-off"></use>
                       </svg>
                       <span>Flights</span>
@@ -40,7 +52,7 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-key"></use>
                       </svg>
                       <span>Car rental</span>
@@ -48,19 +60,28 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-map"></use>
                       </svg>
                       <span>Tours</span>
                   </a>
               </li>
           </ul>
+          <form action="#" class="search">
+              <input type="text" class="search__input" placeholder="Search holidays">
+              <button class="search__button">
+                  <svg class="search__icon icon">
+                      <use xlink:href="assets/sprite.svg#icon-magnifying-glass"></use>
+                  </svg>
+              </button>
+          </form>
 
          
         </nav>
+        
       </div>
 
-      <!--SHOWCASE: background img-->
+      <!--SHOWCASE with background img-->
 
       <section class="showcase">
         <h1 class="heading-xlg heading--light">Explore a World of Amazing Adventures</h1>
@@ -125,6 +146,8 @@
         <div class="holidays__hotel-list"></div>
       </section>
 
+      <!--PROMOTION section-->
+
       <section class="promotions">
           <h1 class="heading-xlg heading--light">Discount <span class="text--green">10-30%</span> Off</h1>
           <p class="promotions__description text text--light">
@@ -136,6 +159,9 @@
           <button class="promotions__btn btn btn--white">See Promotion Tours</button>
       </section>
       
+
+      <!--POPULAR DESTINATIONS section-->
+
       <section class="gallery">
           <h1 class="heading-xlg heading--dark heading--center">Popular Destinations</h1>
           <h3 class="heading-md heading--grey heading--center">Choose Your Next Destination</h3>
@@ -204,7 +230,38 @@
         </div>
 
       </section>
-      <footer>footer</footer>
+
+      <!--FOOTER-->
+
+      <footer>
+        <div class="footer__container">
+            <h3 class="heading-md heading--light">Contacts</h3>
+            <ul class="footer__contacts">
+              <li class="footer__contacts__item">
+                  <svg class="icon icon--light">
+                      <use xlink:href="assets/sprite.svg#icon-location-pin"></use>
+                  </svg>
+                  <span class="text text--light text--small">Northern Quarter, Manchester</span>
+              </li>
+              <li class="footer__contacts__item">
+                  <svg class="icon icon--light">
+                      <use xlink:href="assets/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span class="text text--light text--small">0161 555 5555</span>
+              </li>
+              <li class="footer__contacts__item">
+                  <svg class="icon icon--light">
+                      <use xlink:href="assets/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <span class="text text--light text--small">traveller@traveller.co.uk</span>
+              </li>
+
+
+            </ul>
+          
+        </div>
+        <form action="submit" class="footer__form-controls">form</form>
+      </footer>
     </div>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>

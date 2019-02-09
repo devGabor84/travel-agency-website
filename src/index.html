@@ -20,11 +20,23 @@
       <div class="header">
        
         <nav class="navigation">
-          <div class="logo"></div>
+          <div class="menu__hamburger">
+              <svg class="icon">
+                  <use xlink:href="assets/sprite.svg#icon-menu"></use>
+              </svg>
+          </div>
+
+          <div class="logo">
+              <svg class="logo__icon">
+                  <use xlink:href="assets/sprite.svg#icon-earth"></use>
+              </svg>
+              <h3 class = "heading-md"><span class="text--green">Tra</span>veller</h3>
+          </div>
+
           <ul class="menu">
               <li class="menu__item">
                   <a href="#" class="menu__link">
-                      <svg class="menu__icon">
+                      <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-home"></use>
                       </svg>
                       <span>Home</span>
@@ -32,7 +44,7 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-aircraft-take-off"></use>
                       </svg>
                       <span>Flights</span>
@@ -40,7 +52,7 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-key"></use>
                       </svg>
                       <span>Car rental</span>
@@ -48,16 +60,25 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                     <svg class="menu__icon">
+                     <svg class="menu__icon icon">
                           <use xlink:href="assets/sprite.svg#icon-map"></use>
                       </svg>
                       <span>Tours</span>
                   </a>
               </li>
           </ul>
+          <form action="#" class="search">
+              <input type="text" class="search__input" placeholder="Search holidays">
+              <button class="search__button">
+                  <svg class="search__icon icon">
+                      <use xlink:href="assets/sprite.svg#icon-magnifying-glass"></use>
+                  </svg>
+              </button>
+          </form>
 
          
         </nav>
+        
       </div>
 
       <!--SHOWCASE: background img-->

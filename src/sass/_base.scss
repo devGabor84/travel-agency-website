@@ -32,8 +32,8 @@ ul {
     repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr))
     [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end];
 
-  grid-row-gap: 10rem;
-  padding: 2rem 0;
+  grid-row-gap: 12rem;
+  padding-top: 1rem;
   min-height: 100vh;
 }
 

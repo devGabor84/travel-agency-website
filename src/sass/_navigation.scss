@@ -72,6 +72,7 @@
     transform: translateY(-50%);
     left: 1rem;
     cursor: pointer;
+    visibility: hidden;
   }
 }
 
@@ -105,5 +106,13 @@
   }
   &__icon {
     fill: $black;
+  }
+}
+
+.active {
+  background-color: $green;
+
+  a {
+    color: $white;
   }
 }

@@ -1,6 +1,11 @@
 .holidays {
   grid-column: center-start / center-end;
 
+  @media only screen and (max-width: $bp-small) {
+    grid-column: full-start / full-end;
+    padding: 1rem;
+  }
+
   &__hotel-list {
     padding-top: 2rem;
 
@@ -25,6 +30,11 @@
   grid-template-columns: repeat(3, minmax(max-content, 1fr));
   grid-gap: 2rem;
   padding-top: 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .filter-controls {
@@ -41,6 +51,10 @@
 
     label {
       margin-right: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 0.5rem;
+      }
     }
   }
   select {

@@ -25,6 +25,9 @@
       padding: 1rem;
       width: 100%;
       background-image: linear-gradient(to top, $overlay-light, $overlay-light);
+      @media only screen and (max-width: $bp-small) {
+        padding: 0.5rem;
+      }
     }
 
     @media only screen and (max-width: $bp-medium) {

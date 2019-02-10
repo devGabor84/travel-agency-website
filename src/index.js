@@ -140,4 +140,6 @@ const init = () => {
   addEvListeners();
 };
 
+///////////initialising the app
+
 init();

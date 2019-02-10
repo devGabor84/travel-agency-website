@@ -13,12 +13,30 @@ footer {
 }
 
 .footer__contacts {
-  padding-top: 1rem;
+  padding-top: 2rem;
 
   &__item {
     margin-bottom: 1rem;
     .icon {
       margin-right: 0.75rem;
     }
+  }
+}
+
+.form-container {
+  justify-self: start;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-columns: 100%;
+  grid-gap: 1rem;
+  padding-top: 2rem;
+
+  &__control {
+    padding: 0.5rem;
+    background-color: $light-grey;
+    border: none;
   }
 }

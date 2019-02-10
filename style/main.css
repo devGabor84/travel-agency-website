@@ -80,7 +80,7 @@ ul {
       grid-template-columns: [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(2, minmax(0.5rem, 1fr)) repeat(4, 20rem) repeat(2, minmax(0.5rem, 1fr)) [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end]; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      grid-template-columns: [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(2, minmax(0.5rem, 1fr)) repeat(4, 16rem) repeat(2, minmax(0.5rem, 1fr)) [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end]; } }
+      grid-template-columns: [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(2, minmax(0.5rem, 1fr)) repeat(4, 1fr) repeat(2, minmax(0.5rem, 1fr)) [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end]; } }
 
 .btn {
   border: none;
@@ -243,8 +243,14 @@ ul {
   grid-gap: 2rem;
   padding: 0 12rem;
   margin-top: -12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .showcase {
+      padding: 0 2rem; } }
   .showcase__description {
     padding-right: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .showcase__description {
+        padding-right: 2rem; } }
   .showcase__btn-container {
     display: grid;
     grid-template-columns: repeat(2, -webkit-max-content);
@@ -387,6 +393,9 @@ ul {
       padding: 1rem;
       width: 100%;
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__img__text {
+          padding: 0.5rem; } }
     @media only screen and (max-width: 56.25em) {
       .gallery__img__title {
         font-size: 1.5rem; }

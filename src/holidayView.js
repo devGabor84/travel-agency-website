@@ -18,7 +18,6 @@ const renderHoliday = holiday => {
 
   let infants = holiday.infants > 0 ? infantTemplate : "";
 
-
   let rating = [];
   let ratingValue = holiday.ratingValue;
 
@@ -55,7 +54,7 @@ const renderHoliday = holiday => {
     <span class="text-highlighted">${holiday.startDate}</span> for
     <span class="text-highlighted">${holiday.duration}</span> nights from
     <span class="text-highlighted">${holiday.airport}</span>,
-    <span class="text-highlighted">${holiday.adults}</span>, Adults,
+    <span class="text-highlighted">${holiday.adults}</span> Adults,
     <span class="text-highlighted">${holiday.children}</span>, ${
     holiday.children > 1 ? "children" : "child"
   } ${infants}

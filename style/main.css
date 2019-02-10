@@ -80,7 +80,7 @@ ul {
       grid-template-columns: [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(2, minmax(0.5rem, 1fr)) repeat(4, 20rem) repeat(2, minmax(0.5rem, 1fr)) [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end]; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      grid-template-columns: [full-start] repeat(2, minmax(0.5rem, 1fr)) [center-start] repeat(2, minmax(0.5rem, 1fr)) repeat(4, 1fr) repeat(2, minmax(0.5rem, 1fr)) [center-end] repeat(2, minmax(0.5rem, 1fr)) [full-end]; } }
+      grid-template-columns: [full-start] repeat(12, 1fr) [full-end]; } }
 
 .btn {
   border: none;
@@ -260,6 +260,10 @@ ul {
 
 .holidays {
   grid-column: center-start / center-end; }
+  @media only screen and (max-width: 37.5em) {
+    .holidays {
+      grid-column: full-start / full-end;
+      padding: 1rem; } }
   .holidays__hotel-list {
     padding-top: 2rem;
     display: grid;
@@ -279,6 +283,10 @@ ul {
   grid-template-columns: repeat(3, minmax(max-content, 1fr));
   grid-gap: 2rem;
   padding-top: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .sort-control {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); } }
 
 .filter-controls {
   display: grid;
@@ -292,6 +300,9 @@ ul {
     align-items: center; }
     .filter-controls__container label {
       margin-right: 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .filter-controls__container label {
+          margin-right: 0.5rem; } }
   .filter-controls select {
     grid-column: 1 / 2; }
   .filter-controls button {

@@ -121,7 +121,7 @@ ul {
   position: relative; }
   @media only screen and (max-width: 56.25em) {
     .navigation {
-      grid-template-columns: 3fr 0 1fr;
+      grid-template-columns: 2fr 0 1fr;
       justify-content: center; } }
 
 .logo {
